@@ -2,7 +2,7 @@
 FROM nginx:1.21
 
 # Copy the built static files to the appropriate directory
-COPY ./var/lib/jenkins/workspace/To-do-app /usr/share/nginx/html
+COPY ./To-do-app /usr/share/nginx/html
 
 # Expose port 80 to serve the application
 EXPOSE 80
