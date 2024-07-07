@@ -16,7 +16,7 @@ pipeline{
         stage("provision container"){
             steps{
                 script{
-                    sh 'docker run -d --name to-do-app to-do-app-image'
+                    sh 'docker run -d --name to-do-app -p 80:80 to-do-app-image'
                 }
             }
         }
