@@ -5,7 +5,7 @@ FROM nginx:1.21
 COPY . /usr/share/nginx/html
 
 # Expose port 80 to serve the application
-EXPOSE 9000
+EXPOSE 900
 
 # Default command to start Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
